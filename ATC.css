@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+ background: rgba(179,220,237,1);
+ color: #333;
+}
+#mrityunjay {
+  width: 70%;
+  margin: auto;
+  padding: 15px;
+}
+.resDiv{
+  text-align: right;
+}
+.row1, .row2, .row3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+input[type=number] {
+  width: 20%;
+  height: 30px;
+  padding: 2px;
+  font-size: 20px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+#reset {
+  width: 90px;
+  padding: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+#year1 {
+  width: 20%;
+  height: 30px;
+  padding: 2px;
+  font-size: 20px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+#month {
+  width: 37%;
+  height: 30px;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#date {
+  width: 39%;
+  height: 30px;
+  padding: 2px;
+  font-size: 20px;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+.fdDiv{
+  text-align: center;
+  margin-top: 10px;
+}
+#fd {
+  width: 130px;
+  padding: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+
+  cursor: pointer;
+}
+input, select{
+  margin: 10px 10px;
+
+}
+
+#x {
+  text-align: center;
+  font-size: 40px;
+}
+.jsP{
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 750px){
+  .row1, .row2, .row3{
+    font-size: 15px;
+  }
+  #mrityunjay{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 503px){
+  .row1, .row2, .row3{
+    flex-direction: column;
+    font-size: 12px;
+  }
+  #year1, #year2, #month, #date{
+    width: 50%;
+  }
+  #x{
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ATC.css">
+
+</head>
+
+<body>
+  <div id="mrityunjay">
+    <div class="resDiv"><input type="button" id="reset" value="Reset" onclick="rese()"></div>
+    <div class="row1">
+      <h1>Choose the Year :- </h1>
+      <select id="year1" onchange="changeyear1()">
+        <option>21</option>
+        <option>20</option>
+        <option>19</option>
+        <option>18</option>
+        <option>17</option>
+      </select>
+      <input type=number id=year2 onchange="changeyear2()" value="20">
+    </div>
+
+    <div class="row2">
+      <h1>Select the Month :-</h1>
+      <select id="month" onchange="datechange('month','date')">
+        <option></option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+    </div>
+
+    <div class="row3">
+      <h1>Choose Date :-</h1>
+      <select id="date"></select>
+    </div>
+
+
+    <div class="fdDiv"><input type="button" onclick="findingday()" value="Find Day" id="fd"></div>
+  </div>
+
+  <p id="x"></p>
+
+  <script src="ATC.js"></script>
+</body>
+
+</html>
