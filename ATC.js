@@ -49,34 +49,7 @@ function datechange(s1, s2) {
     newOption.innerHTML = pair[1];
     s2.options.add(newOption);
   }
-  if (year2.value === 0) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 1) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 2) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 3) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 4) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 5) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 6) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 7) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 8) {
-    year2.value = "0" + year2.value;
-  }
-  if (year2.value === 9) {
+  if (year2.value <= 9) {
     year2.value = "0" + year2.value;
   }
 
@@ -189,21 +162,9 @@ function findingday() {
 
 
   /*It is used for displaying the day on any particular date*/
-  if (daycode == 0) {
-    day = "Sunday"
-  } else if (daycode == 1) {
-    day = "Monday"
-  } else if (daycode == 2) {
-    day = "Tuesday"
-  } else if (daycode == 3) {
-    day = "Wednesday"
-  } else if (daycode == 4) {
-    day = "Thusday"
-  } else if (daycode == 5) {
-    day = "Friday"
-  } else if (daycode == 6) {
-    day = "Saturday"
-  }
+  let weekArr = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thusday", "Friday", "Saturday"]
+  
+  day = weekArr[daycode];
 
   x.innerHTML = "<p class='jsP'>Date :- " + date.value + " " + month.value + ", " + leap + "</p> Day :- " + "<b>" + day + "</b>";
 
